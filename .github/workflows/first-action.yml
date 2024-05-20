@@ -1,0 +1,10 @@
+name: First Workflow # 워크플로우 이름
+on: workflow_dispatch # 워크플로우 실행 시기 - 트리거 이벤트 등록
+jobs: # 값을 바로 받아들이지 않음 탭 키 써야함
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done - bye!"
